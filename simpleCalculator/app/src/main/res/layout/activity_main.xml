@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/titleLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My simple calculator"
+                android:gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:padding="20dp"
+                android:background="@color/my_red"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/textLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleLinearLayout"
+            android:layout_marginVertical="30dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="90dp"
+                android:layout_marginVertical="10dp"
+                android:textSize="30dp"
+                android:background="@color/my_lightGray"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:background="@color/my_lightGray"
+                android:layout_marginHorizontal="90dp"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/numericalLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textLinearLayout"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/number1"
+                    style="@style/MyButtonStyle"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/my_gray"
+                    android:backgroundTint="#BAB2B2"
+                    android:text="1"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/number2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:text="2"
+                    app:iconTint="@color/my_gray"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:background="@android:drawable/btn_default"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/number3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:text="3"
+                    app:iconTint="@color/my_gray"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+
+                    android:background="@android:drawable/btn_default"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/numberDivide"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:text="/"
+                    app:iconTint="@color/my_gray"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:background="@android:drawable/btn_default"
+                    tools:ignore="MissingConstraints" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/number4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:text="4"
+                    app:iconTint="@color/my_gray"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:background="@android:drawable/btn_default"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/number5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:text="5"
+                    app:iconTint="@color/my_gray"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:background="@android:drawable/btn_default"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/number6"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:text="6"
+                    app:iconTint="@color/my_gray"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:background="@android:drawable/btn_default"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/numberMultiply"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:text="*"
+                    app:iconTint="@color/my_gray"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:background="@android:drawable/btn_default"
+                    tools:ignore="MissingConstraints" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/number7"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:text="7"
+                    app:iconTint="@color/my_gray"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:background="@android:drawable/btn_default"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/number8"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:text="8"
+                    app:iconTint="@color/my_gray"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:background="@android:drawable/btn_default"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/number9"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:text="9"
+                    app:iconTint="@color/my_gray"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:background="@android:drawable/btn_default"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/numberSub"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:text="-"
+                    app:iconTint="@color/my_gray"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:background="@android:drawable/btn_default"
+                    tools:ignore="MissingConstraints" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/number0"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:text="0"
+                    app:iconTint="@color/my_gray"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:background="@android:drawable/btn_default"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/numberDot"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:text="."
+                    app:iconTint="@color/my_gray"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:background="@android:drawable/btn_default"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/numberEqual"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:text="="
+                    app:iconTint="@color/my_gray"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:background="@android:drawable/btn_default"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/numberAdd"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:text="+"
+                    app:iconTint="@color/my_gray"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:background="@android:drawable/btn_default"
+                    tools:ignore="MissingConstraints" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/negative"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:text="NEG"
+                    app:iconTint="@color/my_gray"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:background="@android:drawable/btn_default"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/clear"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="0dp"
+                    android:layout_margin="5dp"
+                    android:text="CLR"
+                    app:iconTint="@color/my_gray"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:background="@android:drawable/btn_default"
+                    tools:ignore="MissingConstraints" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

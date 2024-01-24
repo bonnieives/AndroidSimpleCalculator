@@ -1,0 +1,11 @@
+<resources>
+    <!-- Other styles here -->
+
+    <style name="MyButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_background</item>
+
+        <!-- Add any other attributes you want to customize -->
+    </style>
+
+</resources>
+
